@@ -1,0 +1,173 @@
+body {
+	
+}
+
+div {
+	
+}
+
+.mockie {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	
+	.title {
+		margin-bottom: 20px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #ccc;
+		font-size: 18px;
+		font-style: italic;
+	}
+}
+
+.two-column-row-with-icon {
+	width: 400px;
+	border: 1px solid #aaa;
+	
+	.icon, .content {
+		height: 50px;
+		padding: 5px;
+	}
+	
+	.icon {
+		float: left;
+		width: 50px;
+	}
+	
+	.content {
+		margin-left: 60px;
+		vertical-align: top;
+		font-size: 24px;
+		color: #666;
+	}
+	
+	img {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+#two-column-row-with-icon {
+	.two-column-row-with-icon;
+}
+
+.two-column-row-with-icon-button {
+	.row {
+		&:hover {
+			background: #999;
+			cursor: pointer;
+		}
+	}
+}
+
+#two-column-row-with-icon-button {
+	.two-column-row-with-icon;
+	.two-column-row-with-icon-button;
+}
+
+#two-column-row-with-icon-button.selected {
+	.two-column-row-with-icon;
+	.two-column-row-with-icon-button;
+	
+	background: #333;
+	
+	.content {
+		color: #eee;
+	}
+}
+
+#two-column-row-with-icon-button.underlined {
+	.two-column-row-with-icon;
+	.two-column-row-with-icon-button;
+	
+	border-bottom: 2px solid #333;
+}
+
+#horizontally-aligned-form {
+	.form {
+		width: 370px;
+
+		.field {
+			.label, .input {
+				height: 30px;
+				padding: 5px;
+			}
+			
+			.label {
+				float: left;
+				width: 150px;
+				text-align: right;
+				font-size: 18px;
+			}
+			
+			.input {
+				margin-left: 160px;
+				
+				input {
+					width: 200px;
+					font-size: 18px;
+				}
+			}
+		}
+		
+		.actions {
+			text-align: center;
+			margin-top: 10px;
+			
+			input[type='submit'] {
+				width: 60px;
+				margin: 5px;
+			}
+		}
+	}
+}
+
+.icon-label-grid {
+	.grid {
+		.row {
+			.cell {
+				display: inline-block;
+				width: 75px;
+				margin: 15px;
+				padding: 5px;
+
+				.label {
+					text-align: center;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+#icon-label-grid {
+	.icon-label-grid;
+}	
+
+#icon-label-as-button-grid {
+	.icon-label-grid;
+	
+	.grid {
+		.row {
+			.cell {
+				background: #eee;
+				border: 1px solid #aaa;
+
+				&:hover {
+					box-shadow: 0 0 5px rgba(150, 150, 150, 1);
+					-webkit-box-shadow: 0 0 5px rgba(150, 150, 150, 1); 
+					-moz-box-shadow: 0 0 5px rgba(150, 150, 150, 1); 
+				}
+				
+				&.selected {
+					box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+					-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 1); 
+					-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 1); 
+				}
+				
+				&.underlined {
+					border-bottom: 2px solid #444;
+				}
+			}
+		}
+	}
+}	
