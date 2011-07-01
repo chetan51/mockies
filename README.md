@@ -6,5 +6,7 @@ Mockies is a collection of HTML / CSS snippets and mockups for rapid prototyping
 Usage
 ---
 
+    git clone git://github.com/chetan51/mockies.git
     sudo gem install annyong
+    cd mockies
     annyong
